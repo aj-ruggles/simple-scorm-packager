@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <xs:schema id="ScormEnginePackageProperties" targetNamespace="http://www.scorm.com/xsd/ScormEnginePackageProperties"
-	elementFormDefault="qualified" xmlns="http://www.scorm.com/xsd/ScormEnginePackageProperties"
-	xmlns:mstns="http://www.scorm.com/xsd/ScormEnginePackageProperties" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	attributeFormDefault="qualified">
+	xmlns="http://www.scorm.com/xsd/ScormEnginePackageProperties"
+	xmlns:mstns="http://www.scorm.com/xsd/ScormEnginePackageProperties"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault = "qualified"
+	attributeFormDefault = "unqualified">
 	<xs:element name="ScormEnginePackageProperties">
 		<xs:complexType>
 			<xs:all>
 				<xs:element name="controls" type="controlsSpec" minOccurs="0" maxOccurs="1" />
 				<xs:element name="appearance" type="appearanceSpec" minOccurs="0" maxOccurs="1" />
-        <!-- allow for mis-spelling of 'appearance' that's acceptable in our parsing code -->
-        <xs:element name="appearence" type="appearanceSpec" minOccurs="0" maxOccurs="1" />
+				<!-- allow for mis-spelling of 'appearance' that's acceptable in our parsing code -->
+				<xs:element name="appearence" type="appearanceSpec" minOccurs="0" maxOccurs="1" />
 				<xs:element name="behavior" type="behaviorSpec" minOccurs="0" maxOccurs="1" />
 				<xs:element name="rsop" type="rsopSpec" minOccurs="0" maxOccurs="1" />
-        <xs:element name="heuristics" type="heuristicSpec" minOccurs="0" maxOccurs="1" />
+				<xs:element name="heuristics" type="heuristicSpec" minOccurs="0" maxOccurs="1" />
 			</xs:all>
 		</xs:complexType>
 	</xs:element>
@@ -22,7 +24,7 @@
 			<xs:element name="showCloseItem" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="showHelp" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="showProgressBar" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="useMeasureProgressBar" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="useMeasureProgressBar" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="showCourseStructure" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="courseStructureStartsOpen" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="showNavBar" type="yesNoType" minOccurs="0" maxOccurs="1" />
@@ -30,7 +32,7 @@
 			<xs:element name="enableFlowNav" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="enableChoiceNav" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="statusDisplay" type="statusDisplayType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="forceDisableRootChoice" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="forceDisableRootChoice" type="yesNoType" minOccurs="0" maxOccurs="1" />
 		</xs:all>
 	</xs:complexType>
 	<xs:complexType name="appearanceSpec">
@@ -44,15 +46,15 @@
 			<xs:element name="launch" type="launchSpec" minOccurs="0" maxOccurs="1" />
 			<xs:element name="exitActions" type="exitActionsSpec" minOccurs="0" maxOccurs="1" />
 			<xs:element name="communications" type="communicationsSpec" minOccurs="0" maxOccurs="1" />
-      <xs:element name="debug" type="debugSpec" minOccurs="0" maxOccurs="1" />
-      <xs:element name="history" type="captureHistorySpec" minOccurs="0" maxOccurs="1" />
-      <xs:element name="disableRightClick" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="debug" type="debugSpec" minOccurs="0" maxOccurs="1" />
+			<xs:element name="history" type="captureHistorySpec" minOccurs="0" maxOccurs="1" />
+			<xs:element name="disableRightClick" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="preventWindowResize" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="scoreRollupMode" type="scoreRollupType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="numberOfScoringObjects" type="xs:int" minOccurs="0" maxOccurs="1" />
 			<xs:element name="statusRollupMode" type="statusRollupType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="thresholdScoreForCompletion" type="xs:decimal" minOccurs="0" maxOccurs="1" />
-      <xs:element name="applyRollupStatusToSuccess" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="applyRollupStatusToSuccess" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="firstScoIsPretest" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="finishCausesImmediateCommit" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="invalidMenuItemAction" type="invalidMenuItemActionType" minOccurs="0" maxOccurs="1" />
@@ -61,57 +63,57 @@
 			<xs:element name="resetRtTiming" type="resetRunTimeDataTimingType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="lookaheadSequencerMode" type="lookaheadSequencerModeType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="scoreOverridesStatus" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="allowCompleteStatusChange" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="allowCompleteStatusChange" type="yesNoType" minOccurs="0" maxOccurs="1" />
 			<xs:element name="scaleRawScore" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="useQuickLookaheadSequencer" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="rollupRuntimeAtScoUnload" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="forceObjectiveCompletionSetByContent" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="invokeRollupAtSuspendAll" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="completionStatOfFailedSuccessStat" type="completionStatusType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="satisfiedCausesCompletion" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="makeStudentPrefsGlobalToCourse" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="returnToLmsAction" type="returnToLmsActionType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="rollupEmptySetToUnknown" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="validateInteractionTypes" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="suspendDataMaxLength" type="xs:int" minOccurs="0" maxOccurs="1" />
-      <xs:element name="timeLimit" type="xs:int" minOccurs="0" maxOccurs="1" />
-    </xs:all>
+			<xs:element name="useQuickLookaheadSequencer" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="rollupRuntimeAtScoUnload" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="forceObjectiveCompletionSetByContent" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="invokeRollupAtSuspendAll" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="completionStatOfFailedSuccessStat" type="completionStatusType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="satisfiedCausesCompletion" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="makeStudentPrefsGlobalToCourse" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="returnToLmsAction" type="returnToLmsActionType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="rollupEmptySetToUnknown" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="validateInteractionTypes" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="suspendDataMaxLength" type="xs:int" minOccurs="0" maxOccurs="1" />
+			<xs:element name="timeLimit" type="xs:int" minOccurs="0" maxOccurs="1" />
+		</xs:all>
 	</xs:complexType>
 	<xs:complexType name="rsopSpec">
 		<xs:all>
 			<xs:element name="offlineSynchMode" type="offlineSynchModeType" minOccurs="0" maxOccurs="1" />
 		</xs:all>
 	</xs:complexType>
-  <xs:complexType name="heuristicSpec">
-    <xs:all>
-      <xs:element name="isCompletionTracked" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="isSatisfactionTracked" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="isScoreTracked" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="isIncompleteScoreMeaningful" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="isIncompleteSatisfactionMeaningful" type="yesNoType" minOccurs="0" maxOccurs="1" />
-    </xs:all>
-  </xs:complexType>
-  <xs:complexType name="debugSpec">
-    <xs:all>
-      <xs:element name="controlAudit" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="controlDetailed" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="runtimeAudit" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="runtimeDetailed" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="sequencingAudit" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="sequencingDetailed" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="sequencingSimple" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="lookaheadAudit" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="lookaheadDetailed" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="includeTimestamps" type="yesNoType" minOccurs="0" maxOccurs="1" />
-    </xs:all>
-  </xs:complexType>
-  <xs:complexType name="captureHistorySpec">
-    <xs:all>
-      <xs:element name="captureHistory" type="yesNoType" minOccurs="0" maxOccurs="1" />
-      <xs:element name="captureHistoryDetailed" type="yesNoType" minOccurs="0" maxOccurs="1" />
-    </xs:all>
-  </xs:complexType>
-  <xs:complexType name="communicationsSpec">
+	<xs:complexType name="heuristicSpec">
+		<xs:all>
+			<xs:element name="isCompletionTracked" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="isSatisfactionTracked" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="isScoreTracked" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="isIncompleteScoreMeaningful" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="isIncompleteSatisfactionMeaningful" type="yesNoType" minOccurs="0" maxOccurs="1" />
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="debugSpec">
+		<xs:all>
+			<xs:element name="controlAudit" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="controlDetailed" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="runtimeAudit" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="runtimeDetailed" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="sequencingAudit" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="sequencingDetailed" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="sequencingSimple" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="lookaheadAudit" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="lookaheadDetailed" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="includeTimestamps" type="yesNoType" minOccurs="0" maxOccurs="1" />
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="captureHistorySpec">
+		<xs:all>
+			<xs:element name="captureHistory" type="yesNoType" minOccurs="0" maxOccurs="1" />
+			<xs:element name="captureHistoryDetailed" type="yesNoType" minOccurs="0" maxOccurs="1" />
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="communicationsSpec">
 		<xs:all>
 			<xs:element name="maxFailedSubmissions" type="xs:int" minOccurs="0" maxOccurs="1" />
 			<xs:element name="commitFrequency" type="xs:int" minOccurs="0" maxOccurs="1" />
@@ -237,22 +239,22 @@
 			<xs:enumeration value="best done " />
 		</xs:restriction>
 	</xs:simpleType>
-  <xs:simpleType name="completionStatusType">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="completed" />
-      <xs:enumeration value="incomplete" />
-      <xs:enumeration value="browsed" />
-      <xs:enumeration value="not attempted" />
-      <xs:enumeration value="unknown" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:simpleType name="returnToLmsActionType">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="legacy" />
-      <xs:enumeration value="suspend_all" />
-      <xs:enumeration value="exit_all" />
-      <xs:enumeration value="selectable" />
-    </xs:restriction>
-  </xs:simpleType>
-  
+	<xs:simpleType name="completionStatusType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="completed" />
+			<xs:enumeration value="incomplete" />
+			<xs:enumeration value="browsed" />
+			<xs:enumeration value="not attempted" />
+			<xs:enumeration value="unknown" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="returnToLmsActionType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="legacy" />
+			<xs:enumeration value="suspend_all" />
+			<xs:enumeration value="exit_all" />
+			<xs:enumeration value="selectable" />
+		</xs:restriction>
+	</xs:simpleType>
+
 </xs:schema>
