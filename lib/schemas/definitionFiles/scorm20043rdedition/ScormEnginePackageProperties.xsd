@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<xs:schema id="ScormEnginePackageProperties" targetNamespace="http://www.scorm.com/xsd/ScormEnginePackageProperties"
+<xs:schema id="ScormEnginePackageProperties" 
+	targetNamespace="http://www.scorm.com/xsd/ScormEnginePackageProperties"
 	xmlns="http://www.scorm.com/xsd/ScormEnginePackageProperties"
 	xmlns:mstns="http://www.scorm.com/xsd/ScormEnginePackageProperties"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
